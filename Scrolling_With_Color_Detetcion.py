@@ -2,7 +2,10 @@ import cv2
 import numpy as np
 import pyautogui
 
+#  to use camera resource
 cap = cv2.VideoCapture(0)
+
+#  color array that by which we want to detect it
 yellow_lower = np.array([22, 93, 0])
 yellow_upper = np.array([45, 255, 255])
 prev_y = 0
